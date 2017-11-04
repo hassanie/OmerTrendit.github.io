@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Trendit Studios</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- ChartJS Library for PieChart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pie-chart/1.0.0/pie-chart.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Modified CSS -->
+    <link rel="stylesheet" type="text/css" href="mainCSS.css">
+</head>
+
+<body>
+
+    <!-- Trendit Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#"><img id="nav-logo" src="images/trenditString/stringSmall.png"></a>
+            </div>
+            <nav class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li data-toggle="collapse" data-target="#myNavbar"><a href="#overview">OVERVIEW</a></li>
+                    <li data-toggle="collapse" data-target="#myNavbar"><a href="#social">WHITEPAPER</a></li>
+                    <li data-toggle="collapse" data-target="#myNavbar"><a href="#token">TOKEN</a></li>
+                    <li data-toggle="collapse" data-target="#myNavbar"><a href="#team">TEAM</a></li>
+                    <li data-toggle="collapse" data-target="#myNavbar"><a href="#social">SOCIAL</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Trendit Jumbotron -->
+    <div class="jumbotron text-center">
+        <img id="jumbo-logo" src="images/trenditIcon/trenditIcon_192.png">
+        <p>Start viral worldwide trends, make money in the process!</p>
+        <br>
+        <button class="btn btn-default btn-lg" data-target="#crowdsaleInfo" data-toggle="modal">Crowdsale</button>
+        <div class="modal fade text-center" id="crowdsaleInfo">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- header -->
+                    <div class="modal-header">
+                        Crowdsale Details
+                        <button type="buton" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Address -->
+                    <div class="modal-body">
+                        <p align="center">Crowdsale will start on December 1, 2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overview -->
+    <div class="container-fluid text-center" id="overview">
+        <div class="container-fluid">
+
+            <h1>What is Trendit?</h1>
+            <p align="center">A social media platform that pays you in cryptocurrency to make viral content! The more viral your content, the more you earn.</p>
+            <!--<p align="justify">Trendit is a social platform that will allow users to keep up with the latest social trends while also allowing them to express themselves by creating their own viral trends, challenges and creative ideas. Trendit combines social media interactions with cryptocurrency by allowing users to earn cryptocurrency rewards for creating quality content and interacting with peers in the social space.</p>-->
+            <br>
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="images/icons/trends.png" alt="trendsImage" height=130 width=130>
+                <h4><b>Trends</b></h4>
+                <p align="justify">Make viral content related to fashion, food, or other trendy categories. Make money based on how viral your created content becomes!</p>
+              </div>
+              <div class="col-sm-4">
+                <img src="images/icons/events.png" alt="eventsImage" height=130 width=130>
+                <h4><b>Events</b></h4>
+                <p align="justify">Have an upcoming event or want to plan a new event? Create one on the trendit platform to bring more people to your event, all while getting paid.</p>
+              </div>
+              <div class="col-sm-4">
+                <img src="images/icons/challenges.png" alt="challengesImage" height=130 width=130>
+                <h4><b>Challenges</b></h4>
+                <p align="justify">Want to challenge the world or just your city? Create a new challenge and earn money on its popularity!</p>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="images/icons/ethereum.png" alt="ethereumImage" height=130 width=130>
+                <h4><b>ERC20 Token</b></h4>
+                <p align="justify">Dividend payments to our users and investors are linked fundamentally to our ERC20 based Cryptocurrency token. The token is built on top of the Ethereum network.</p>
+              </div>
+              <div class="col-sm-4">
+                <img src="images/icons/promotions.png" alt="promotionsImage" height=130 width=130>
+                <h4><b>Promotions</b></h4>
+                <p align="justify">The trendit platform gives people the opportunity to promote content to our users for a small fee. Money earned from promotions helps drives more earnings for our users and investors.</p>
+              </div>
+              <div class="col-sm-4">
+                <img src="images/icons/dividends.png" alt="dividendsImage" height=130 width=130>
+                <h4><b>Dividends</b></h4>
+                <p align="justify">Based on our quarterly earnings, trendit studios will be paying our token holders as well as content creators a 50% cut of our profits.</p>
+              </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Crowdsale Details -->
+    <div class="container-fluid bg-grey text-center" id="token">
+        <h1>Token Model</h1>
+        <br>
+        <h4>Token Distribution</h4>
+        <p align="justify">Trendit is a social platform that will allow users to keep up with the latest social trends while also allowing them to express themselves by creating their own viral trends, challenges and creative ideas. Trendit combines social media interactions with cryptocurrency by allowing users to earn cryptocurrency rewards for creating quality content and interacting with peers in the social space</p>
+        <br><br>
+        <h4>Funding</h4>
+        <p>Funding distribution details</p>
+    </div>
+
+    <!-- Trendit Team Container -->
+    <div class="container-fluid text-center" id="team">
+        <h2>Founding Team Members</h2>
+        <p align="center">Trendit's team is comprised of experienced engineers skilled in software development, blockchain technology, marketing and management of business operations.</p>
+        <br>
+        <div class="row">
+            <!-- Omer Shukrullah -->
+            <div class="col-sm-4">
+                <br>
+                <p><strong>Omer Shukrullah</strong></p>
+                <p>CEO</p>
+                <a href="#omerInfo" data-toggle="modal">
+                    <img src="images/team/omer.jpg" alt="OmerImage" height=180 width=190>
+                </a>
+                <div class="modal fade text-center" id="omerInfo">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- header -->
+                            <div class="modal-header">
+                                Omer Shukrullah
+                                <button type="buton" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <!-- Address -->
+                            <div class="modal-body">
+                                <img src="images/team/omer2.jpg" class="image-responsive" alt="OmerImage2" width=400><br><br>
+                                <p align="justify">Founder and Chief Engineering Officer of Trendit studios. Competent in software development with over 4 years of Android development experience. Expert in leading and managing projects from his role as project engineer at Advanced Micro Devices. Winner of several engineering design project awards, as well as academic excellence awards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Amit Roy -->
+            <div class="col-sm-4">
+                <br>
+                <p><strong>Amit Roy</strong></p>
+                <p>CTO</p>
+                <a href="#amitInfo" data-toggle="modal">
+                    <img src="images/team/amit.jpg" alt="AmitImage" height=180 width=190>
+                </a>
+                <div class="modal fade text-center" id="amitInfo">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- header -->
+                            <div class="modal-header">
+                                Amit Roy
+                                <button type="buton" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <!-- Address -->
+                            <div class="modal-body">
+                                <img src="images/team/amit2.jpg" class="image-responsive" alt="AmitImage2" width=400><br><br>
+                                <p align="justify">Founder and Chief Technical Officer of Trendit studios. Expert in design engineering and automation with experience at Advanced Micro Devices as a Lead Systems Design Verification Engineer. Winner of Ryerson University of Toronto Desgin engineering award.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atique Chowdry -->
+            <div class="col-sm-4">
+                <br>
+                <p><strong>Atique Chowdry</strong></p>
+                <p>Media</p>
+                <a href="#atiqueInfo" data-toggle="modal">
+                    <img src="images/team/atique.jpg" alt="AtiqueImage" height=180 width=190>
+                </a>
+                <div class="modal fade text-center" id="atiqueInfo">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- header -->
+                            <div class="modal-header">
+                                Atique Chowdry
+                                <button type="buton" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <!-- Address -->
+                            <div class="modal-body">
+                                <img src="images/team/atique2.jpg" class="image-responsive" alt="AtiqueImage2" width=400><br><br>
+                                <p align="justify">Founder Media engineer at Trendit Studios. Responsible for marketing and media development. Strong management and startup experience from previous startups including wildly successful startup Electrify</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fatin Mufrad -->
+            <div class="col-sm-6">
+                <br>
+                <p><strong>Fatin Mufrad</strong></p>
+                <p>Development</p>
+                <a href="#fatinInfo" data-toggle="modal">
+                    <img src="images/team/fatin.jpg" alt="FatinImage" height=180 width=190>
+                </a>
+                <div class="modal fade text-center" id="fatinInfo">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- header -->
+                            <div class="modal-header">
+                                Fatin Mufrad
+                                <button type="buton" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <!-- Address -->
+                            <div class="modal-body">
+                                <img src="images/team/fatin2.jpg" class="image-responsive" alt="FatinImage2" width=200><br><br>
+                                <p align="justify">Founder and Development engineer of Trendit Studios. Has a very strong background in development from multiple projects executed over the past 5 years.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ajay Basnet -->
+            <div class="col-sm-6">
+                <br>
+                <p><strong>Ajay Basnet</strong></p>
+                <p>Customer Engagement</p>
+                <a href="#ajayInfo" data-toggle="modal">
+                    <img src="images/team/ajay.jpg" alt="AjayImage" height=180 width=190>
+                </a>
+                <div class="modal fade text-center" id="ajayInfo">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- header -->
+                            <div class="modal-header">
+                                Ajay Basnet
+                                <button type="buton" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <!-- Address -->
+                            <div class="modal-body">
+                                <img src="images/team/ajay2.jpg" class="image-responsive" alt="AjayImage2" width=400><br><br>
+                                <p align="justify">Founder and Customer engagement engineer at Trendit Studios. Strong development experience with his role in Machine Learning and AI automation at Advanced Micro Devices. Has a very strong background in social media relations. Experienced in building strong customer relations through social media platforms and direct customer support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Roadmap Container -->
+    <div class="container-fluid text-center bg-main" id="social">
+        <h1>Roadmap</h1>
+    </div>
+
+
+
+</body>
+
+</html>
