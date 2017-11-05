@@ -1,5 +1,5 @@
 .container-fluid {
-    padding: 50px 30px;
+    padding: 30px 30px;
 }
 
 .jumbotron {
@@ -88,4 +88,19 @@
 .services{
     margin-right: 20;
     margin-left: 20;
+}
+
+.thumbnail{
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 5px;
+    background-color:#3f51b5;
+    color: #ffffff;
+}
+
+.thumbnail img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
