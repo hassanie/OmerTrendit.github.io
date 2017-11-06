@@ -15,9 +15,37 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Modified CSS -->
     <link rel="stylesheet" type="text/css" href="mainCSS.css">
+    <!-- Smooth Scrolling script -->
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+        
+            // Prevent default anchor click behavior
+            event.preventDefault();
+        
+            // Store hash
+            var hash = this.hash;
+        
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 900, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+                });
+            } // End if
+            });
+        })
+    </script>
 </head>
 
-<body>
+<body id="myPage" data-spy="scroll" data-target="#myNavbar" data-offset="60">
 
     <!-- Trendit Navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -28,7 +56,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#"><img id="nav-logo" src="images/trenditString/stringSmall.png"></a>
+                <a href="#main"><img id="nav-logo" src="images/trenditString/stringSmall.png"></a>
             </div>
             <nav class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -44,7 +72,7 @@
     </nav>
 
     <!-- Trendit Jumbotron -->
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center" id="main">
         <img id="jumbo-logo" src="images/trenditIcon/trenditIcon_192.png">
         <p>Start viral worldwide trends, make money in the process!</p>
         <br>
@@ -63,7 +91,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
     </div>
 
     <!-- Overview -->
@@ -107,6 +135,7 @@
                 <p align="justify">Based on our quarterly earnings, trendit studios will be paying our token holders as well as content creators a 50% cut of our profits.</p>
             </div>
         </div>
+
     </div>
 
     <!-- Crowdsale Details -->
@@ -280,6 +309,34 @@
         <h1>Roadmap</h1>
     </div>
 
+    <!-- Contact Us Container -->
+    <div class="container-fluid bg-grey">
+        <h2 class="text-center">CONTACT</h2>
+        <br>
+        <div class="row">
+            <div class="col-sm-5">
+            <p>Contact us and we'll get back to you as soon as possible.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Ontario, Canada</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> TrenditStudios@gmail.com</p> 
+            </div>
+            <div class="col-sm-7">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div> 
+            </div>
+        </div>
+    </div>
 
 
 </body>
