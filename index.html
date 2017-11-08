@@ -145,7 +145,7 @@
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
                     /* If the object is completely visible in the window, fade it it */
                     if( bottom_of_window > bottom_of_object ){
-                        $(this).animate({'opacity':'1'},800);   
+                        $(this).animate({'opacity':'1'},1200);   
                     }
                 }); 
             });
@@ -181,7 +181,7 @@
 
     <!-- Trendit Jumbotron -->
     <div class="jumbotron text-center" id="main">
-        <img id="jumbo-logo" src="images/trenditIcon/trenditIcon_192.png">
+        <img id="jumbo-logo" class="hideme" src="images/trenditIcon/trenditIcon_192.png">
         <p class="hideme">Start viral worldwide trends, make money in the process!</p>
         <br>
         <button class="btn btn-default btn-lg hideme" data-target="#crowdsaleInfo" data-toggle="modal">Crowdsale</button>
@@ -204,7 +204,7 @@
 
     <!-- Overview -->
     <div class="container-fluid text-center" id="overview">
-        <h1>What is Trendit?</h1>
+        <h1 class="hideme">What is Trendit?</h1>
         <p align="center" class="hideme">A social media platform that pays you in cryptocurrency to make viral content! The more viral your content, the more you earn.</p>
         <!--<p align="justify">Trendit is a social platform that will allow users to keep up with the latest social trends while also allowing them to express themselves by creating their own viral trends, challenges and creative ideas. Trendit combines social media interactions with cryptocurrency by allowing users to earn cryptocurrency rewards for creating quality content and interacting with peers in the social space.</p>-->
         <br>
@@ -256,7 +256,8 @@
             <div class="col-md-7 hideme" align="center">
             </div>
         </div>
-
+        <hr>
+        <h1>Funding Distribution</h1> 
         <div class="row align-items-center">
                 <div class="col-md-7 hideme" align="center">
                 </div>
