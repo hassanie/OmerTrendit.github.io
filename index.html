@@ -45,47 +45,112 @@
     </script>
     <!-- Google charts -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <!-- Chart 1 -->
-        <script type="text/javascript">
-            // Load google charts
-            google.charts.load('current', {'packages':['corechart']});
-            google.charts.setOnLoadCallback(drawChart);
-            
-            // Draw the chart and set the chart values
-            function drawChart() {
-              var data = google.visualization.arrayToDataTable([
-              ['Trendit Tokens', 'Number of Tokens'],
-              ['User Acqusition', 20],
-              ['Company Reserve', 40],
-              ['Crowdsale', 80],
-              ['Content Creators', 80],
-            ]);
-            
-              // Optional; add a title and set the width and height of the chart
-            var options = {
-                titlePosition: 'none',
-                vAxis: {minValue: 0},
-                chartArea: {'width': '100%', 'height': '80%'},
-                /*legend: {'position': 'bottom'},*/
-                legend: 'none',
-                padding: '0px 0px',
-                backgroundColor: '#f5eeee',
-                is3D: true
-            };
+    <!-- Chart 1 -->
+    <script type="text/javascript">
+        // Load google charts
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        
+        // Draw the chart and set the chart values
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ['Trendit Tokens', 'Number of Tokens'],
+            ['User Acqusition', 20],
+            ['Company Reserve', 40],
+            ['Crowdsale', 80],
+            ['Content Creators', 80],
+        ]);
+        
+            // Optional; add a title and set the width and height of the chart
+        var options = {
+            titlePosition: 'none',
+            vAxis: {minValue: 0},
+            chartArea: {'width': '100%', 'height': '80%'},
+            /*legend: {'position': 'bottom'},*/
+            legend: 'none',
+            padding: '0px 0px',
+            backgroundColor: '#f5eeee',
+            is3D: true
+        };
 
-                
             
-              // Display the chart inside the <div> element with id="piechart"
-              var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-              chart.draw(data, options);
-            }
-        </script>
-        <script>
-            $(window).resize(function(){
-                drawChart();
+        
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+        }
+    </script>
+    <!-- Chart 2 -->
+    <script type="text/javascript">
+        // Load google charts
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart2);
+        
+        // Draw the chart and set the chart values
+        function drawChart2() {
+            var data = google.visualization.arrayToDataTable([
+            ['Finance Distribution', 'Percentage'],
+            ['Founders', 5],
+            ['Company Reserve', 40],
+            ['Crowdsale', 80],
+            ['Content Creators', 80],
+        ]);
+        
+            // Optional; add a title and set the width and height of the chart
+        var options = {
+            titlePosition: 'none',
+            vAxis: {minValue: 0},
+            chartArea: {'width': '100%', 'height': '80%'},
+            /*legend: {'position': 'bottom'},*/
+            legend: 'none',
+            padding: '0px 0px',
+            backgroundColor: '#f5eeee',
+            is3D: true
+        };
 
+            
+        
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+            chart.draw(data, options);
+        }
+    </script>
+    <!-- Automatic Resize google chart scripts -->
+    <script>
+        $(window).resize(function(){
+            drawChart();
+            drawChart2();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+            /* Check the location of each desired element */
+            $('.hideme').each( function(i){
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+                    $(this).animate({'opacity':'1'},3000);   
+                }
+            }); 
+
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll( function(){
+                /* Check the location of each desired element */
+                $('.hideme').each( function(i){
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    /* If the object is completely visible in the window, fade it it */
+                    if( bottom_of_window > bottom_of_object ){
+                        $(this).animate({'opacity':'1'},800);   
+                    }
+                }); 
             });
-        </script>
+        });
+    </script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target="#myNavbar" data-offset="60">
@@ -99,16 +164,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#main"><img id="nav-logo" src="images/trenditString/stringSmall.png"></a>
+                <a href="#main"><img id="nav-logo" class="hideme" src="images/trenditString/stringSmall.png"></a>
             </div>
             <nav class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <!--<li data-toggle="collapse" data-target="#myNavbar">-->
-                    <li><a href="#overview">OVERVIEW</a></li>
-                    <li><a href="#social">WHITEPAPER</a></li>
-                    <li><a href="#token">TOKEN</a></li>
-                    <li><a href="#team">TEAM</a></li>
-                    <li><a href="#roadmap">ROADMAP</a></li>
+                    <li><a href="#overview" class="hideme">OVERVIEW</a></li>
+                    <li><a href="#token" class="hideme">TOKEN</a></li>
+                    <li><a href="#team" class="hideme">TEAM</a></li>
+                    <li><a href="#roadmap" class="hideme">ROADMAP</a></li>
+                    <li><a href="#social" class="hideme">WHITEPAPER</a></li>
                 </ul>
             </div>
         </div>
@@ -117,9 +182,9 @@
     <!-- Trendit Jumbotron -->
     <div class="jumbotron text-center" id="main">
         <img id="jumbo-logo" src="images/trenditIcon/trenditIcon_192.png">
-        <p>Start viral worldwide trends, make money in the process!</p>
+        <p class="hideme">Start viral worldwide trends, make money in the process!</p>
         <br>
-        <button class="btn btn-default btn-lg" data-target="#crowdsaleInfo" data-toggle="modal">Crowdsale</button>
+        <button class="btn btn-default btn-lg hideme" data-target="#crowdsaleInfo" data-toggle="modal">Crowdsale</button>
         <div class="modal fade text-center" id="crowdsaleInfo">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -140,21 +205,21 @@
     <!-- Overview -->
     <div class="container-fluid text-center" id="overview">
         <h1>What is Trendit?</h1>
-        <p align="center">A social media platform that pays you in cryptocurrency to make viral content! The more viral your content, the more you earn.</p>
+        <p align="center" class="hideme">A social media platform that pays you in cryptocurrency to make viral content! The more viral your content, the more you earn.</p>
         <!--<p align="justify">Trendit is a social platform that will allow users to keep up with the latest social trends while also allowing them to express themselves by creating their own viral trends, challenges and creative ideas. Trendit combines social media interactions with cryptocurrency by allowing users to earn cryptocurrency rewards for creating quality content and interacting with peers in the social space.</p>-->
         <br>
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 hideme">
                 <img src="images/icons/trends.png" alt="trendsImage" height=130 width=130>
                 <h4><b>Trends</b></h4>
                 <p align="justify">Make viral content related to fashion, food, or other trendy categories. Make money based on how viral your created content becomes!</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 hideme">
                 <img src="images/icons/events.png" alt="eventsImage" height=130 width=130>
                 <h4><b>Events</b></h4>
                 <p align="justify">Have an upcoming event or want to plan a new event? Create one on the trendit platform to bring more people to your event, all while getting paid.</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 hideme">
                 <img src="images/icons/challenges.png" alt="challengesImage" height=130 width=130>
                 <h4><b>Challenges</b></h4>
                 <p align="justify">Want to challenge the world or just your city? Create a new challenge and earn money on its popularity!</p>
@@ -162,17 +227,17 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 hideme">
                 <img src="images/icons/ethereum.png" alt="ethereumImage" height=130 width=130>
                 <h4><b>ERC20 Token</b></h4>
                 <p align="justify">Dividend payments to our users and investors are linked fundamentally to our ERC20 based Cryptocurrency token. The token is built on top of the Ethereum network.</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 hideme">
                 <img src="images/icons/promotions.png" alt="promotionsImage" height=130 width=130>
                 <h4><b>Promotions</b></h4>
                 <p align="justify">The trendit platform gives people the opportunity to promote content to our users for a small fee. Money earned from promotions helps drives more earnings for our users and investors.</p>
             </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 hideme">
                 <img src="images/icons/dividends.png" alt="dividendsImage" height=130 width=130>
                 <h4><b>Dividends</b></h4>
                 <p align="justify">Based on our quarterly earnings, trendit studios will be paying our token holders as well as content creators a 50% cut of our profits.</p>
@@ -186,10 +251,18 @@
         <h1>Token Distribution</h1>        
         <div class="row align-items-center">
             <div class="col-md-5" align="center">
-                <div class="chart" id="piechart"></div>
+                <div class="chart hideme" id="piechart"></div>
             </div>
-            <div class="col-md-7" align="center">
+            <div class="col-md-7 hideme" align="center">
             </div>
+        </div>
+
+        <div class="row align-items-center">
+                <div class="col-md-7 hideme" align="center">
+                </div>
+                <div class="col-md-5 hideme" align="center">
+                        <div class="chart" id="piechart2"></div>
+                </div>
         </div>
     </div>
 
@@ -200,7 +273,7 @@
         
         <div class="row text-center">
             <!-- Omer Shukrullah -->
-            <div class="col-md-4" align="center">
+            <div class="col-md-4 hideme" align="center">
                 <div class="thumbnail" align="center">
                     <a href="#omerInfo" data-toggle="modal">
                         <img src="images/team/omer.jpg" alt="omer">
@@ -228,7 +301,7 @@
             </div>
 
             <!-- Amit Roy -->
-            <div class="col-md-4" align="center">
+            <div class="col-md-4 hideme" align="center">
                 <div class="thumbnail" align="center">
                     <a href="#amitInfo" data-toggle="modal">
                         <img src="images/team/amit.jpg" alt="amit">
@@ -256,7 +329,7 @@
             </div>
 
             <!-- Atique Chowdry -->
-            <div class="col-md-4" align="center">
+            <div class="col-md-4 hideme" align="center">
                 <div class="thumbnail" align="center">
                     <a href="#atiqueInfo" data-toggle="modal">
                         <img src="images/team/atique.jpg" alt="atique">
@@ -285,7 +358,7 @@
 
         <div class="row text-center" align="center">
             <!-- Fatin Mufrad -->
-            <div class="col-md-4" align="center">
+            <div class="col-md-4 hideme" align="center">
                 <div class="thumbnail" align="center">
                     <a href="#fatinInfo" data-toggle="modal">
                         <img src="images/team/fatin.jpg" alt="fatin">
@@ -312,7 +385,7 @@
             </div>
 
             <!-- Ajay Basnet -->
-            <div class="col-md-4" align="center">
+            <div class="col-md-4 hideme" align="center">
                 <div class="thumbnail" align="center">
                     <a href="#ajayInfo" data-toggle="modal">
                         <img src="images/team/ajay.jpg" alt="ajay">
@@ -338,7 +411,7 @@
                 </div>
             </div>
             
-            <div class="col-md-4" align="center">
+            <div class="col-md-4 hideme" align="center">
                 <div class="thumbnail">
                     <img src="images/team/blank2.png" alt="blank">
                     <h4><strong>Join our team +</strong></h4>
