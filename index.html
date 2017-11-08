@@ -43,6 +43,49 @@
             });
         })
     </script>
+    <!-- Google charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <!-- Chart 1 -->
+        <script type="text/javascript">
+            // Load google charts
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+            
+            // Draw the chart and set the chart values
+            function drawChart() {
+              var data = google.visualization.arrayToDataTable([
+              ['Trendit Tokens', 'Number of Tokens'],
+              ['User Acqusition', 20],
+              ['Company Reserve', 40],
+              ['Crowdsale', 80],
+              ['Content Creators', 80],
+            ]);
+            
+              // Optional; add a title and set the width and height of the chart
+            var options = {
+                titlePosition: 'none',
+                vAxis: {minValue: 0},
+                chartArea: {'width': '100%', 'height': '80%'},
+                /*legend: {'position': 'bottom'},*/
+                legend: 'none',
+                padding: '0px 0px',
+                backgroundColor: '#f5eeee',
+                is3D: true
+            };
+
+                
+            
+              // Display the chart inside the <div> element with id="piechart"
+              var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+              chart.draw(data, options);
+            }
+        </script>
+        <script>
+            $(window).resize(function(){
+                drawChart();
+
+            });
+        </script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target="#myNavbar" data-offset="60">
@@ -140,13 +183,14 @@
 
     <!-- Crowdsale Details -->
     <div class="container-fluid bg-grey text-center" id="token">
-        <h1>Token Model</h1>
-        <br>
-        <h4>Token Distribution</h4>
-        <p align="justify">Trendit is a social platform that will allow users to keep up with the latest social trends while also allowing them to express themselves by creating their own viral trends, challenges and creative ideas. Trendit combines social media interactions with cryptocurrency by allowing users to earn cryptocurrency rewards for creating quality content and interacting with peers in the social space</p>
-        <br><br>
-        <h4>Funding</h4>
-        <p>Funding distribution details</p>
+        <h1>Token Distribution</h1>        
+        <div class="row align-items-center">
+            <div class="col-md-5" align="center">
+                <div class="chart" id="piechart"></div>
+            </div>
+            <div class="col-md-7" align="center">
+            </div>
+        </div>
     </div>
 
     <!-- Trendit Team Container -->
