@@ -122,29 +122,29 @@
             drawChart2();
         });
     </script>
-
+    <!-- Fade in script -->
     <script>
         $(document).ready(function() {
 
-            /* Check the location of each desired element */
+            /* If element is visible on page load then make it visible immediately */
             $('.hideme').each( function(i){
-                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight()/4;
                 var bottom_of_window = $(window).scrollTop() + $(window).height();
                 /* If the object is completely visible in the window, fade it it */
-                if( bottom_of_window > bottom_of_object ){
+                if( bottom_of_window > bottom_of_object){
                     $(this).animate({'opacity':'1'},3000);   
                 }
             }); 
 
 
-            /* Every time the window is scrolled ... */
+            /* If element becomes visible after page scrolls then make it become visible */
             $(window).scroll( function(){
                 /* Check the location of each desired element */
                 $('.hideme').each( function(i){
                     var bottom_of_object = $(this).offset().top + ($(this).outerHeight()/4);
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
                     /* If the object is completely visible in the window, fade it it */
-                    if( bottom_of_window > bottom_of_object ){
+                    if( bottom_of_window > bottom_of_object){
                         $(this).animate({'opacity':'1'},1200);   
                     }
                 }); 
