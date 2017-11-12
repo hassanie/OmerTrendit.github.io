@@ -13,7 +13,35 @@
   overflow: hidden;
   position:absolute;
   top:0;left:0;
-  z-index:1;
+  z-index:0;
+}
+
+.jumbotron-billboard2 .img {
+  margin-bottom: 0px;
+  opacity: 0.3;
+  color: #fff;
+  background: #000 url("https://media.giphy.com/media/sSrnQsI3r3P44/giphy.gif") center center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  position:absolute;
+  top:0;left:0;
+  z-index:0;
+}
+
+.jumbotron-billboard3 .img {
+  margin-bottom: 0px;
+  opacity: 0.1;
+  color: #fff;
+  background: #000 url("https://developers.giphy.com/static/img/api.c99e353f761d.gif") center center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  position:absolute;
+  top:0;left:0;
+  z-index:0;
 }
 
 .jumbotron {
@@ -26,7 +54,7 @@
 .jumbotron .container {z-index:2;
   position:relative;
    z-index:2;
- }
+}
 
 .bg-grey{
     background-color:#f5eeee; /*9c27b0; e6e1e1*/
@@ -103,17 +131,14 @@
     font-size: 18px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    z-index:9999;
 }
 
 .modal-dialog{
     margin-top: 100px;
-    z-index:9999;
 }
 
 .modal-content{
     color: #000 !important;
-    z-index:9999;
 }
 
 .services{
