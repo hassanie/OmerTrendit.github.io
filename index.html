@@ -153,13 +153,35 @@
             });
         });
     </script>
+    <!-- Navbar Scrolling Script -->
+    <script>
+        $(document).ready(function(){       
+            var scroll_start = 0;
+            var startchange = $('#startchange');
+            var offset = startchange.offset();
+            scroll_start = $(this).scrollTop();
+            if(scroll_start > offset.top) {
+                $('#navbar').css('background-color', '#3f51b5');
+            } else {
+                $('#navbar').css('background-color', 'transparent');
+            }
+            $(document).scroll(function() { 
+                scroll_start = $(this).scrollTop();
+                if(scroll_start > offset.top) {
+                    $('#navbar').css('background-color', '#3f51b5');
+                } else {
+                    $('#navbar').css('background-color', 'transparent');
+                }
+            });
+        });
+    </script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target="#myNavbar" data-offset="60">
 
     <!-- Trendit Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+        <div class="container navbar-inner">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
@@ -173,35 +195,39 @@
                     <!--<li data-toggle="collapse" data-target="#myNavbar">-->
                     <li><a href="#overview" class="hideme">OVERVIEW</a></li>
                     <li><a href="#token" class="hideme">TOKEN</a></li>
-                    <li><a href="#team" class="hideme">TEAM</a></li>
                     <li><a href="#roadmap" class="hideme">ROADMAP</a></li>
-                    <li><a href="#social" class="hideme">WHITEPAPER</a></li>
+                    <li><a href="#team" class="hideme">TEAM</a></li>
+                    <li><a href="https://drive.google.com/open?id=13hAIVLwd8ZG5a_mkCtxNlkp_KPhmwr3mq_S8AXQBKO0" target="_blank" class="hideme">WHITEPAPER</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Trendit Jumbotron -->
-    <div class="jumbotron text-center" id="main">
-        <img id="jumbo-logo" class="hideme" src="images/trenditIcon/trenditIcon_192.png">
-        <p class="hideme">Start viral worldwide trends, make money in the process!</p>
-        <br>
-        <button class="btn btn-default btn-lg hideme" data-target="#crowdsaleInfo" data-toggle="modal">Crowdsale</button>
-        <div class="modal fade text-center" id="crowdsaleInfo">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <!-- header -->
-                    <div class="modal-header">
-                        Crowdsale Details
-                        <button type="buton" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <!-- Address -->
-                    <div class="modal-body">
-                        <p align="center">Crowdsale will start on December 1, 2017</p>
+    <div class="jumbotron jumbotron-billboard text-center" id="main">
+        <div class="img"></div>
+        <div class="container">
+            <div id="startchange"></div>
+            <img id="jumbo-logo" class="hideme" src="images/trenditIcon/trenditIcon_192.png">
+            <p class="hideme">Start viral worldwide trends, make money in the process!</p>
+            <br>
+            <button class="btn btn-default btn-lg hideme" data-target="#crowdsaleInfo" data-toggle="modal">Crowdsale</button>
+            <div class="modal fade text-center" id="crowdsaleInfo">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- header -->
+                        <div class="modal-header">
+                            Crowdsale Details
+                            <button type="buton" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Address -->
+                        <div class="modal-body">
+                            <p align="center">Crowdsale will start on December 1, 2017</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>     
     </div>
 
     <!-- Overview -->
@@ -363,7 +389,6 @@
 
     </div>
 
-
     <!-- Trendit Team Container -->
     <div class="container-fluid text-center" id="team">
             <h2>Founding Team Members</h2>
@@ -518,8 +543,6 @@
                 </div>
             </div>
     </div>
-    
-
     
     <!-- Contact Us Container -->
     <div class="container-fluid bg-grey">
