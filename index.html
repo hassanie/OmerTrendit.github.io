@@ -91,9 +91,9 @@
             var data = google.visualization.arrayToDataTable([
             ['Finance Distribution', 'Percentage'],
             ['Founders', 5],
-            ['Company Reserve', 40],
-            ['Crowdsale', 80],
-            ['Content Creators', 80],
+            ['Salaries', 30],
+            ['Marketing', 20],
+            ['Future Reserve', 45],
         ]);
         
             // Optional; add a title and set the width and height of the chart
@@ -101,8 +101,7 @@
             titlePosition: 'none',
             vAxis: {minValue: 0},
             chartArea: {'width': '100%', 'height': '80%'},
-            /*legend: {'position': 'bottom'},*/
-            legend: 'none',
+            legend: {'position': 'bottom'},
             padding: '0px 0px',
             is3D: true
         };
@@ -335,9 +334,17 @@
         <hr>
         <h1>Distribution of Raised Crowdsale Funds</h1> 
         <div class="row align-items-center">
-                <div class="col-md-7" align="center">
+                <div class="col-sm-8" align="center">
+                    <p align="justify">
+                        <br><br><br><br>
+                        - The majority of our companies generated ERC20 Tokens will be reserved for our investors and Content Creators. Token's reserved for content creators will never be distributed, they will simply be used to pay Ethereum dividends earned by each creator. 
+                        <br><br>    
+                        - The User Acquisition portion of the token holdings will be used to drive new users to the platform as the platform ramps up to profitability. Once the platform begins to make a profit the token payout model will be replaced with an Ethereum payout model. Any remaining user acquisition tokens will be burned.
+                        <br><br>
+                        - The Company Reserve portion of our tokens will be used to pay advisors and will be used as incentives for futre employees. This portion of the token holdings will be locked for 1 year following the conclusion of our crowdsale.
+                    </p>
                 </div>
-                <div class="col-md-5" align="center">
+                <div class="col-sm-4" align="center">
                         <div class="chart" id="piechart2"></div>
                 </div>
         </div>
