@@ -132,7 +132,7 @@
                 var bottom_of_window = $(window).scrollTop() + $(window).height();
                 /* If the object is completely visible in the window, fade it it */
                 if( bottom_of_window > bottom_of_object){
-                    $(this).animate({'opacity':'1'},3000);   
+                    $(this).animate({'opacity':'1'},1000);   
                 }
             }); 
 
@@ -145,7 +145,7 @@
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
                     /* If the object is completely visible in the window, fade it it */
                     if( bottom_of_window > bottom_of_object){
-                        $(this).animate({'opacity':'1'},1200);   
+                        $(this).animate({'opacity':'1'},1000);   
                     }
                 }); 
             });
@@ -173,6 +173,36 @@
             });
         });
     </script>
+    <!-- Crowdsale Timer Script -->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 1, 2018 00:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+            // Get todays date and time
+            var now = new Date().getTime();
+            
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+            
+            // If the count down is finished, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target="#myNavbar" data-offset="60">
@@ -192,10 +222,10 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!--<li data-toggle="collapse" data-target="#myNavbar">-->
                     <li><a href="#overview" class="hideme">OVERVIEW</a></li>
+                    <li><a href="#platform" class="hideme">PLATFORM</a></li>
                     <li><a href="#token" class="hideme">TOKEN</a></li>
                     <li><a href="#roadmap" class="hideme">ROADMAP</a></li>
                     <li><a href="#team" class="hideme">TEAM</a></li>
-                    <li><a href="https://drive.google.com/open?id=13hAIVLwd8ZG5a_mkCtxNlkp_KPhmwr3mq_S8AXQBKO0" target="_blank" class="hideme">WHITEPAPER</a></li>
                 </ul>
             </div>
         </div>
@@ -209,7 +239,8 @@
             <img id="jumbo-logo" class="hideme" src="images/trenditIcon/trenditIcon_192.png">
             <p class="hideme">Start viral worldwide trends, make money in the process!</p>
             <br>
-            <button class="btn btn-default btn-lg hideme" data-target="#crowdsaleInfo" data-toggle="modal">Crowdsale</button>
+            <button align="center" class="btn btn-default btn-lg hideme" data-target="#crowdsaleInfo" data-toggle="modal">Crowdsale</button>
+            <a class="btn btn-success btn-lg hideme" href="https://drive.google.com/open?id=13hAIVLwd8ZG5a_mkCtxNlkp_KPhmwr3mq_S8AXQBKO0" target="_blank">Whitepaper</a>
             
         </div>  
         <div class="modal fade text-center" id="crowdsaleInfo">
@@ -222,7 +253,8 @@
                     </div>
                     <!-- Address -->
                     <div class="modal-body">
-                        <p align="center">Crowdsale will start on December 1, 2017</p>
+                        <h3 align="center">Crowdsale will start in:</h3>
+                        <p id="demo"></p>
                     </div>
                 </div>
             </div>
@@ -274,12 +306,12 @@
     </div>
 
     <!-- Trendit Platform -->
-    <div class="jumbotron jumbotron-billboard2 text-center" id="main">
+    <div class="jumbotron jumbotron-billboard2 text-center" id="platform">
         <div class="img"></div>
         <div class="container">
             <h2><b>Social Media Platform</b></h2><br>     
             <p align="justify"><b>Trendit's goal is to be a social media website that helps viral content get created. Making viral content isn't easy, it takes effort and planning. At trendit we provide a simple platform for users all around the world to organize and control exposure to their viral content. Not only that, we also ensure our users get paid in cryptocurrency for their efforts!</b></p>    
-            <img class="hideme img-responsive" src="images/mockup/mockup4.png">
+            <img class="hideme img-responsive" src="images/mockup/mockupKick.png">
         </div>    
     </div>
 
