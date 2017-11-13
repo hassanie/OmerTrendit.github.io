@@ -4,9 +4,10 @@
 
 .jumbotron-billboard .img {
   margin-bottom: 0px;
-  opacity: 0.2;
+  opacity: 0.1;
   color: #fff;
-  background: #000 url("http://www.dbcinteractive.com/wp-content/uploads/engagements-FB.gif") center center;
+  background: #000 url("https://media.giphy.com/media/sSrnQsI3r3P44/giphy.gif") center center;
+  
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -20,7 +21,7 @@
   margin-bottom: 0px;
   opacity: 0.1;
   color: #fff;
-  background: #000 url("https://media.giphy.com/media/sSrnQsI3r3P44/giphy.gif") center center;
+  background: #000 url("https://i.pinimg.com/originals/64/03/cd/6403cd601259fdaa7ca8664283c3b563.gif") center center;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -34,7 +35,7 @@
   margin-bottom: 0px;
   opacity: 0.1;
   color: #fff;
-  background: #000 url("https://developers.giphy.com/static/img/api.c99e353f761d.gif") center center;
+  background: #000 url("https://wildbit.com/blog-images/2016/05/roadmap.png") center center;
   width: 100%;
   height: 100%;
   background-size: cover;
