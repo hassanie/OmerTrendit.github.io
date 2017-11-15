@@ -3,7 +3,7 @@
 
 <head>
     <title>Trendit Studios</title>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -171,36 +171,8 @@
             });
         });
     </script>
-    <!-- Crowdsale Timer Script -->
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Jan 1, 2018 00:00:00").getTime();
-        
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-            // Get todays date and time
-            var now = new Date().getTime();
-            
-            // Find the distance between now an the count down date
-            var distance = countDownDate - now;
-            
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-            // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-            
-            // If the count down is finished, write some text 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
+    <!-- Crowdsale Timer Script New -->
+    <script src="files/countdown/countdown.js" type="text/javascript"></script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target="#myNavbar" data-offset="60">
@@ -251,8 +223,33 @@
                     </div>
                     <!-- Address -->
                     <div class="modal-body">
-                        <h3 align="center">Crowdsale will start in:</h3>
-                        <p id="demo"></p>
+                        <!-- =========================================================== -->
+                        <p>Crowdsale starts in:</p>
+                        <!-- =========================================================== -->
+                        <div align="center" id="myCountdownClock">
+                        <script type="application/javascript">
+
+                            //Set Future Date
+                            var end = new Date('01/01/2018 10:6 AM');
+                            var _second = 1000;
+                            var _minute = _second * 60;
+                            var _hour = _minute * 60;
+                            var _day = _hour * 24;
+                            var timer;
+
+                            //Get Current Date
+                            var now = new Date();
+                            var distance = end - now;
+
+                            var myCountdown1 = new Countdown({
+                                time: distance, // 86400 seconds = 1 day
+                                width:300, 
+                                height:60,  
+                                rangeHi:"day",
+                                style:"flip"	// <- no comma on last item!
+                            });
+                        </script>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -262,22 +259,22 @@
     <!-- Overview -->
     <div class="container-fluid text-center" id="overview">
         <h1 class="hideme">What is Trendit?</h1>
-        <p align="center" class="hideme">A social media platform that pays you in cryptocurrency to make viral content! The more viral your content, the more you earn.</p>
+        <h4 align="center" class="hideme">A social media platform that pays you in cryptocurrency to make viral content! The more viral your content, the more you earn.</h4>
         <!--<p align="justify">Trendit is a social platform that will allow users to keep up with the latest social trends while also allowing them to express themselves by creating their own viral trends, challenges and creative ideas. Trendit combines social media interactions with cryptocurrency by allowing users to earn cryptocurrency rewards for creating quality content and interacting with peers in the social space.</p>-->
         <br>
         <div class="row">
             <div class="col-sm-4 hideme">
-                <img src="images/icons/trends.png" alt="trendsImage" width="100">
+                <img src="images/icons/trends.png" alt="trendsImage">
                 <h4><b>Trends</b></h4>
                 <p align="justify">Make viral content related to fashion, food, or other trendy categories. Make money based on how viral your created content becomes!</p>
             </div>
             <div class="col-sm-4 hideme">
-                <img src="images/icons/events.png" alt="eventsImage" width="100">
+                <img src="images/icons/events.png" alt="eventsImage">
                 <h4><b>Events</b></h4>
                 <p align="justify">Have an upcoming event or want to plan a new event? Create one on the trendit platform to bring more people to your event, all while getting paid.</p>
             </div>
             <div class="col-sm-4 hideme">
-                <img src="images/icons/challenges.png" alt="challengesImage" width="100">
+                <img src="images/icons/challenges.png" alt="challengesImage">
                 <h4><b>Challenges</b></h4>
                 <p align="justify">Want to challenge the world or just your city? Create a new challenge and earn money on its popularity!</p>
             </div>
@@ -285,17 +282,17 @@
         <br>
         <div class="row">
             <div class="col-sm-4 hideme">
-                <img src="images/icons/design.png" alt="ethereumImage" width="100">
+                <img src="images/icons/design.png" alt="ethereumImage">
                 <h4><b>ERC20 Token</b></h4>
                 <p align="justify">Dividend payments to our users and investors are linked fundamentally to our ERC20 based Cryptocurrency token. The token is built on top of the Ethereum network.</p>
             </div>
             <div class="col-sm-4 hideme">
-                <img src="images/icons/promotions.png" alt="promotionsImage" width="100">
+                <img src="images/icons/promotions.png" alt="promotionsImage">
                 <h4><b>Promotions</b></h4>
                 <p align="justify">The trendit platform gives people the opportunity to promote content to our users for a small fee. Money earned from promotions helps drives more earnings for our users and investors.</p>
             </div>
                 <div class="col-sm-4 hideme">
-                <img src="images/icons/dividends.png" alt="dividendsImage" width="100">
+                <img src="images/icons/dividends.png" alt="dividendsImage">
                 <h4><b>Dividends</b></h4>
                 <p align="justify">Based on our quarterly earnings, trendit studios will be paying our token holders as well as content creators a 50% cut of our profits.</p>
             </div>
@@ -306,7 +303,7 @@
     <!-- Trendit Platform -->
     <div class="jumbotron jumbotron-billboard2 text-center" id="platform">
         <div class="img"></div>
-        <div class="container">
+        <div class="container text-center">
             <h2><b>Social Media Platform</b></h2><br>     
             <p align="justify"><b>Trendit's goal is to be a social media website that helps viral content get created. Making viral content isn't easy, it takes effort and planning. At trendit we provide a simple platform for users all around the world to organize and control exposure to their viral content. Not only that, we also ensure our users get paid in cryptocurrency for their efforts!</b></p>    
             <img class="hideme img-responsive" src="images/mockup/mockupKick.png">
