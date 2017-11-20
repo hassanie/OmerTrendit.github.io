@@ -152,17 +152,17 @@
     max-height: 450px;
     border: 1;
     border-radius: 5px;
-    background-color:#f3f1f1;
+    background-color:#f8f6f6;
     color: #000;
     text-align: center;
 }
 
 .overview{
-  padding: 100px 100px;
+  padding: 100px 5%;
 }
 
 .distribution{
-  padding: 100px 140px;
+  padding: 100px 10%;
 }
 
 .distribution .img-responsive {
