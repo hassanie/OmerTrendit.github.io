@@ -7,7 +7,7 @@
   height: 35px;
   width: 60px;
   font-size: 22px;
-  background: #3f51b5;
+  background: #5769c7;
   color: #3c3c3c;
   position: relative;
   margin-top: 15px;
@@ -175,11 +175,12 @@
   position: relative;
   margin: 1em 0 0 0;
   padding: 1em;
-  background: #3f51b5;
+  background: #5769c7;
   -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
   -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
   box-shadow: 0 0 1px rgba(0,0,0,0.20);
   z-index: 15;
+  font-size: 16px !important;
 }
 
 .direction-l .desc,
