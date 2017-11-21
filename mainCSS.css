@@ -4,7 +4,7 @@
 
 .jumbotron-billboard .img {
   margin-bottom: 0px;
-  opacity: 0.1;
+  opacity: 0.3;
   color: #fff;
   background: #000 url("https://media.giphy.com/media/sSrnQsI3r3P44/giphy.gif") center center;
   width: 100%;
@@ -18,7 +18,7 @@
 
 .jumbotron-billboard2 .img {
   margin-bottom: 0px;
-  opacity: 0.1;
+  opacity: 0.15;
   color: #fff;
   background: #000 url("https://www.simplilearn.com/ice9/free_resources_article_thumb/real-impact-social-media-article.jpg") center center;
   width: 100%;
@@ -32,7 +32,7 @@
 
 .jumbotron-billboard3 .img {
   margin-bottom: 0px;
-  opacity: 0.1;
+  opacity: 0.2;
   color: #fff;
   background: #000 url("https://wildbit.com/blog-images/2016/05/roadmap.png") center center;
   width: 100%;
