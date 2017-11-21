@@ -45,74 +45,6 @@
             });
         })
     </script>
-    <!-- Google charts -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <!-- Chart 1 -->
-    <script type="text/javascript">
-        // Load google charts
-        google.charts.load('current', {'packages':['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
-        
-        // Draw the chart and set the chart values
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-            ['Trendit Tokens', 'Number of Tokens'],
-            ['User Acqusition', 20],
-            ['Company Reserve', 40],
-            ['Crowdsale', 80],
-            ['Content Creators', 80],
-        ]);
-        
-            // Optional; add a title and set the width and height of the chart
-        var options = {
-            titlePosition: 'none',
-            vAxis: {minValue: 0},
-            chartArea: {'width': '100%', 'height': '80%'},
-            legend: {'position': 'bottom'},
-            padding: '0px 0px',
-            is3D: true
-        };
-
-            
-        
-            // Display the chart inside the <div> element with id="piechart"
-            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-            chart.draw(data, options);
-        }
-    </script>
-    <!-- Chart 2 -->
-    <script type="text/javascript">
-        // Load google charts
-        google.charts.load('current', {'packages':['corechart']});
-        google.charts.setOnLoadCallback(drawChart2);
-        
-        // Draw the chart and set the chart values
-        function drawChart2() {
-            var data = google.visualization.arrayToDataTable([
-            ['Finance Distribution', 'Percentage'],
-            ['Founders', 5],
-            ['Salaries', 30],
-            ['Marketing', 20],
-            ['Future Reserve', 45],
-        ]);
-        
-            // Optional; add a title and set the width and height of the chart
-        var options = {
-            titlePosition: 'none',
-            vAxis: {minValue: 0},
-            chartArea: {'width': '100%', 'height': '80%'},
-            legend: {'position': 'bottom'},
-            padding: '0px 0px',
-            is3D: true
-        };
-
-            
-        
-            // Display the chart inside the <div> element with id="piechart"
-            var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
-            chart.draw(data, options);
-        }
-    </script>
     <!-- Automatic Resize google chart scripts -->
     <script>
         $(window).resize(function(){
@@ -207,7 +139,7 @@
         <div class="container">
             <div id="startchange"></div>
             <img id="jumbo-logo" class="hideme" src="images/trenditIcon/trenditIcon_192.png">
-            <p class="hideme">Start viral worldwide trends, make money in the process!</p>
+            <p class="hideme"><b>Start viral worldwide trends, make money in the process!</b></p>
             <br>
             <button align="center" class="btn btn-default btn-lg hideme" data-target="#crowdsaleInfo" data-toggle="modal">Crowdsale</button>
             <a class="btn btn-success btn-lg hideme" href="https://drive.google.com/open?id=13hAIVLwd8ZG5a_mkCtxNlkp_KPhmwr3mq_S8AXQBKO0" target="_blank">Whitepaper</a>
@@ -305,7 +237,7 @@
         <div class="img"></div>
         <div class="container text-center">
             <h2><b>Social Media Platform</b></h2><br>     
-            <p align="justify">Trendit's goal is to be a social media website that helps viral content get created. Making viral content isn't easy, it takes effort and planning. At trendit we provide a simple platform for users all around the world to organize and control exposure to their viral content. Not only that, we also ensure our users get paid in cryptocurrency for their efforts!</p>    
+            <p align="justify"><b>Trendit's goal is to be a social media website that helps viral content get created. Making viral content isn't easy, it takes effort and planning. At trendit we provide a simple platform for users all around the world to organize and control exposure to their viral content. Not only that, we also ensure our users get paid in cryptocurrency for their efforts!</b></p>    
             <img class="hideme img-responsive" src="images/mockup/mockupKick.png">
         </div>    
     </div>
