@@ -173,7 +173,9 @@
   }
 }
 
-
+.platform .img-responsive {
+  margin: 0 auto;
+}
 
 .distribution .img-responsive {
   margin: 0 auto;
