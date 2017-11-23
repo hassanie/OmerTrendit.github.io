@@ -4,7 +4,7 @@
 
 .jumbotron-billboard .img {
   margin-bottom: 0px;
-  opacity: 0.5;
+  opacity: 0.3;
   color: #fff;
   background: #000 url("https://media.giphy.com/media/sSrnQsI3r3P44/giphy.gif") center center;
   width: 100%;
@@ -34,7 +34,7 @@
   margin-bottom: 0px;
   opacity: 0.2;
   color: #fff;
-  background: #fff; /* url("https://wildbit.com/blog-images/2016/05/roadmap.png") center center;*/
+  background: #000 url("https://wildbit.com/blog-images/2016/05/roadmap.png") center center;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -46,7 +46,7 @@
 
 .jumbotron {
     position: relative;
-    background-color: #fff; 
+    background-color: #5769c7; 
     color: #ffffff;
     padding: 60px 25px;
 }
