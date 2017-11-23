@@ -4,7 +4,7 @@
 
 .jumbotron-billboard .img {
   margin-bottom: 0px;
-  opacity: 0.3;
+  opacity: 0.5;
   color: #fff;
   background: #000 url("https://media.giphy.com/media/sSrnQsI3r3P44/giphy.gif") center center;
   width: 100%;
@@ -46,7 +46,7 @@
 
 .jumbotron {
     position: relative;
-    background-color: #5769c7; 
+    background-color: #fff; 
     color: #ffffff;
     padding: 60px 25px;
 }
