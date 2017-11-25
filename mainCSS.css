@@ -18,7 +18,7 @@
 
 .jumbotron-billboard2 .img {
   margin-bottom: 0px;
-  opacity: 0.15;
+  opacity: 0.1;
   color: #fff;
   background: #000 url("https://www.simplilearn.com/ice9/free_resources_article_thumb/real-impact-social-media-article.jpg") center center;
   width: 100%;
@@ -51,9 +51,12 @@
     padding: 60px 25px;
 }
 
-.jumbotron .container {z-index:2;
+.jumbotron .container {
   position:relative;
-   z-index:2;
+   z-index:0;
+}
+.jumbotron .li{
+  color:#000;
 }
 
 .bg-grey{
@@ -312,13 +315,11 @@ body {
   border-radius: 6px;
 }
 
-.videoTest > video {
-  display: inline;
-  margin:0 !important;
-  padding:0 !important;  
+.nav-tabs > li, .nav-pills > li {
+  float:none;
+  display:inline-block;
 }
 
-.videoTest {
-  font-size: 0;
+.nav-tabs, .nav-pills {
+  text-align:center;
 }
-  
