@@ -89,14 +89,14 @@
             var offset = startchange.offset();
             scroll_start = $(this).scrollTop();
             if(scroll_start > offset.top) {
-                $('#navbar').css('background-color', '#5769c7');
+                $('#navbar').css('background-color', '#4e69ec');
             } else {
                 $('#navbar').css('background-color', 'transparent');
             }
             $(document).scroll(function() { 
                 scroll_start = $(this).scrollTop();
                 if(scroll_start > offset.top) {
-                    $('#navbar').css('background-color', '#5769c7');
+                    $('#navbar').css('background-color', '#4e69ec');
                 } else {
                     $('#navbar').css('background-color', 'transparent');
                 }
@@ -118,7 +118,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#main"><img id="nav-logo" class="hideme" src="images/trenditString/stringSmall.png"></a>
+                <a href="#main"><img id="nav-logo" class="hideme" src="images/trenditicon/trendit.png" width="32"><img id="nav-logo" class="hideme" src="images/trenditString/stringSmall.png"></a>
             </div>
             <nav class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -138,8 +138,10 @@
         <div class="img"></div>
         <div class="container">
             <div id="startchange"></div>
-            <img id="jumbo-logo" class="hideme" src="images/trenditIcon/trenditIcon_192.png">
-            <p class="hideme"><b>Start viral worldwide trends, make money in the process!</b></p>
+            <br><br><br>
+            <img id="jumbo-logo" class="hideme" src="images/trenditString/bannerstring.png" width="256"> <!-- trenditIcon_192.png -->
+            <br><br><br>
+            <p class="hideme"><b>A Rewarding Platform for Viral Content!</b></p>
             <br>
             <button align="center" class="btn btn-default btn-lg hideme" data-target="#crowdsaleInfo" data-toggle="modal">Crowdsale</button>
             <a class="btn btn-success btn-lg hideme" href="https://drive.google.com/open?id=13hAIVLwd8ZG5a_mkCtxNlkp_KPhmwr3mq_S8AXQBKO0" target="_blank">Whitepaper</a>
@@ -258,7 +260,31 @@
 
     <!-- Crowdsale Details -->
     <div class="container-fluid text-center distribution" id="token">
-        <h1>Planned Token Distribution</h1>        
+        <h2><b>Trend Tokens</b></h2>
+        <br>
+        <ul class="nav nav-tabs">
+                <li class="active"><a class="btn btn-success" data-toggle="tab" href="#home2">Tokens</a></li>
+                <li><a class="btn btn-success" data-toggle="tab" href="#menu2">Finance</a></li>
+                <li><a class="btn btn-success" data-toggle="tab" href="#menu3">Video</a></li>
+        </ul>
+        
+        <div class="tab-content">
+            <br><br>
+            <div id="home2" class="tab-pane fade in active">
+                <p>Trendit provides users with an amazing and easy to use social media interface! The Trendit user interface is designed from the ground up to work seamlessly on all mobile and desktop devices with web connectivity!</p><br>
+                <img src="images/graphDescription/banks.png" width="60%" class="img-responsive">
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <p>Trendit provides users with an amazing and easy to use social media interface! The Trendit user interface is designed from the ground up to work seamlessly on all mobile and desktop devices with web connectivity!</p><br>    
+                <img src="images/graphDescription/distribution.png" width="50%" class="img-responsive">
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <p>Trendit provides users with an amazing and easy to use social media interface! The Trendit user interface is designed from the ground up to work seamlessly on all mobile and desktop devices with web connectivity!</p><br>    
+                <video controls width="80%" height="auto" name="Platform Video" src="files/Final.mov"></video>
+            </div>
+        </div>
+        <br><br><br>
+        <!--<h1>Planned Token Distribution</h1>        
         <div class="row align-items-center">
             <div class="col-lg-6" align="center">
                 <img class="img-responsive" src="images/graphDescription/banks.PNG">
@@ -295,7 +321,7 @@
                     <br>
                     <img class="img-responsive" src="images/graphDescription/distribution.PNG">
             </div>
-        </div>
+        </div>-->
     </div>
 
     <!-- Roadmap Container -->
