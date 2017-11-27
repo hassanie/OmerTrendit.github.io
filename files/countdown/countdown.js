@@ -1,4 +1,4 @@
-////////////////////////////////////////////
+﻿////////////////////////////////////////////
 // 
 //    Countdown
 //    v5.3 - 2016-12-08 23:02
@@ -14,9 +14,9 @@
 ////////////////////////////////////////////
 
 
-var CountdownImageFolder = "files/countdown/images/";
-var CountdownImageBasename = "FLIPPER";
-var CountdownImageExt = "PNG";
+var CountdownImageFolder = "files/countdown/images";
+var CountdownImageBasename = "flipper";
+var CountdownImageExt = "png";
 var CountdownImagePhysicalWidth = 41;
 var CountdownImagePhysicalHeight = 60;
 
