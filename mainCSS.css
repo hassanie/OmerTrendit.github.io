@@ -61,8 +61,7 @@
 
 .bg-grey{
     /*background-color:#f5eeee; /*9c27b0; e6e1e1*/
-    background-color:#eee8e8;
-    /*background: url('images/background/lightblueback.png');*/
+    background: url('images/background/lightblueback.png');
     background-color: #f5eeee;
     background-size: cover;
 }
