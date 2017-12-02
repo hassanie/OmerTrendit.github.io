@@ -362,6 +362,8 @@ body {
 	height: 100%;
 }
 
+
+/* Carousel Code */
 .carousel-control.left, .carousel-control.right{ 
   background: none !important;
   filter: none !important;
@@ -396,4 +398,11 @@ body {
 .carousel-inner{
   width:85%;
   margin: auto;
+}
+
+
+/* Magnifying Glass */
+#zoom{
+ border:1px black solid;
+ box-shadow: 5px 5px 10px #1e1e1e;
 }
