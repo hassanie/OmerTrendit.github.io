@@ -389,12 +389,7 @@ body {
   background-color: #ffff99;
 }
 
-.carousel-control.left{
-  left: 15px;
-}
-.carousel-control.right{
-  right: 15px;
-}
+
 
 .carousel-inner{
   width:80%;
