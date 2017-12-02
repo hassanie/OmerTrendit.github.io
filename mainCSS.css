@@ -185,7 +185,7 @@
   padding: 0 0 10px 0;
   margin-bottom: 40px;
   width: 220px;
-  height: 520px;
+  height: 530px;
   border: 1;
   border-radius: 15px;
   background-color:#ebeff1;
@@ -204,7 +204,7 @@
 .thumbnail .socialMedia img{
   width: 28px !important;
   border-radius: 0px !important;
-  margin-top: 0px;
+  margin-top: -5px;
   margin-right: 10px;
 }
 
@@ -401,4 +401,18 @@ body {
 #zoom{
  border:1px black solid;
  box-shadow: 5px 5px 10px #1e1e1e;
+}
+
+.table{
+  width: 70%;
+  margin: auto;
+}
+
+
+
+@media (max-width: 720px) {
+  .table{
+    width: 100%;
+    margin: auto;
+  }
 }
