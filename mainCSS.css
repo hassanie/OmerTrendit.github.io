@@ -205,13 +205,17 @@
   width: 28px !important;
   border-radius: 0px !important;
   margin-top: -5px;
-  margin-right: 10px;
+}
+
+.thumbnail .socialMedia a{
+  display: inline;
 }
 
 .thumbnail ul{
   padding: 0 5%;
   font-size: 12px;
 }
+
 
 .btn .btn-custom{
   background-color: #4e69ec !important; 
