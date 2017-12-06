@@ -66,6 +66,30 @@
     background-size: cover;
 }
 
+.bg-team{
+  position: relative;
+  background-color: #f5eeee;
+  background-size: cover;
+}
+
+.bg-team .container {
+  position:relative;
+   z-index:0;
+}
+
+.bg-team .img{
+  margin-bottom: 0px;
+  color: #fff;
+  background: #000 url("images/background/lightblueback.png") center center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  position:absolute;
+  top:0;left:0;
+  z-index:0;
+}
+
 .bg-main{
     background-color:#4e69ec;
     color: #fff !important;
