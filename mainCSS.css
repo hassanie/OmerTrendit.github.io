@@ -87,6 +87,15 @@
   z-index:0;
 }
 
+.bg-team .hr{
+  display: block;
+  height: 4px;
+  border: 1;
+  border-top: 4px solid #4f6cf0;
+  margin: 1em 0em;
+  padding: 0; 
+}
+
 .bg-team2{
   position: relative;
   background-color: #f5eeee;
@@ -189,6 +198,17 @@
     margin-top: 100px;
 }
 
+.video .modal-dialog {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.video .modal-content {
+  height: 100%;
+  border-radius: 0;
+}
+
 .modal-content{
     color: #000 !important;
 }
@@ -278,7 +298,7 @@ hr {
     display: block;
     height: 4px;
     border: 1;
-    border-top: 4px solid #808391;
+    border-top: 4px solid #6b86fc;
     margin: 1em 0em;
     padding: 0; 
 }
@@ -446,12 +466,6 @@ body {
   margin: auto;
 }
 
-
-/* Magnifying Glass */
-#zoom{
- border:1px black solid;
- box-shadow: 5px 5px 10px #1e1e1e;
-}
 
 .table{
   width: 70%;
