@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow|Bree+Serif|Dosis|Lato|Open+Sans|Poppins|Ubuntu');
+
 .container-fluid {
     padding: 50px 30px;
 }
@@ -80,7 +82,7 @@
 .bg-team .myback{
   margin-bottom: 0px;
   color: #fff;
-  background: #000 url("images/background/lightblueback.png") center center;
+  background: #f8f8f8 /*url("images/background/lightblueback.png") center center;*/
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -296,7 +298,11 @@ hr {
 
 /* Set a background color */
 body {
-  font-family: Helvetica, sans-serif;
+  /*font-family: 'Poppins', sans-serif;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Barlow', sans-serif;*/
+  font-family: 'Poppins', sans-serif;
 }
 
 /* The actual timeline (the vertical ruler) */
