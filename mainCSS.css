@@ -74,6 +74,19 @@
    z-index:0;
 }
 
+.bg-blue{
+  position: relative;
+  background-color: #f5eeee;
+  background-size: cover;
+  padding-left: 20% !important;
+  padding-right: 20% !important;
+}
+
+.bg-blue .container {
+  position:relative;
+   z-index:0;
+}
+
 .bg-team .myback{
   margin-bottom: 0px;
   color: #fff;
@@ -219,11 +232,13 @@
   height: 50%;
 }
 
-.bg-team .modal-dialog {
+.bg-blue .modal-dialog {
   margin-top: 60px;
   width: 100%;
   height: 0;
-  padding: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -233,7 +248,7 @@
   
 }
 
-.bg-team .modal-content {
+.bg-blue .modal-content {
   height: 0;
   border-radius: 0;
   border: none;
@@ -499,7 +514,7 @@ body {
   }
 }
 
-.hovereffect {
+.platform .hovereffect {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width:80%;
   overflow:hidden;
@@ -508,6 +523,16 @@ body {
   cursor:default;
   margin-bottom: 10px;
   }
+
+.videoSection .hovereffect {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width:100%;
+  overflow:hidden;
+  position:relative;
+  text-align:center;
+  cursor:default;
+  margin-bottom: 10px;
+}
   
   .hovereffect .overlay {
   width:100%;
