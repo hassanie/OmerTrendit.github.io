@@ -210,14 +210,15 @@
 }
 
 .bg-team .modal-content {
+  height: auto;
   border-radius: 0;
+
 }
 
 .services{
     margin-right: 20;
     margin-left: 20;
 }
-
 
 
 .overview{
