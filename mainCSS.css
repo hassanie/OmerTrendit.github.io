@@ -186,6 +186,7 @@
     color: #fff !important;
 }
 
+
 .jumbotron .modal-header{
     background-color: #4e69ec; 
     color: #ffffff;
@@ -202,6 +203,21 @@
     color: #000 !important;
 }
 
+/*Youtube Videos*/
+.videoWrapper {
+	position: relative;
+	padding-bottom: 100%; /* 16:9 */
+	padding-top: 40%;
+  height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+  height: 60%;
+}
+
 .bg-team .modal-dialog {
   margin-top: 60px;
   width: 90%;
@@ -210,7 +226,7 @@
 }
 
 .bg-team .modal-content {
-  height: auto;
+  height: 100%;
   border-radius: 0;
 
 }
@@ -313,12 +329,8 @@ hr {
   box-sizing: border-box;
 }
 
-/* Set a background color */
+/* Set a font */
 body {
-  /*font-family: 'Poppins', sans-serif;
-  font-family: 'Dosis', sans-serif;
-  font-family: 'Bree Serif', serif;
-  font-family: 'Barlow', sans-serif;*/
   font-family: 'Poppins', sans-serif;
 }
 
@@ -423,21 +435,7 @@ body {
   text-align:center;
 }
 
-/*Youtube Videos*/
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-  height: 0;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 90%;
-  height: 80%;
-  padding-left: 10%;
-}
+
 
 
 /* Carousel Code */
