@@ -206,29 +206,42 @@
 /*Youtube Videos*/
 .videoWrapper {
 	position: relative;
-	padding-bottom: 100%; /* 16:9 */
+	padding-bottom: 57.5%; /* 16:9 */
 	padding-top: 40%;
-  height: 0;
+  height: 100%;
 }
 .videoWrapper iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-  height: 60%;
+  height: 50%;
 }
 
 .bg-team .modal-dialog {
   margin-top: 60px;
   width: 90%;
-  height: 90%;
+  height: 100%;
   padding: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+  border: none;
+  
 }
 
 .bg-team .modal-content {
-  height: 100%;
+  height: 0;
   border-radius: 0;
-
+  border: none;
+  background-color: rgba(0,0,0,.0001) !important;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -moz-transition: none;
+  -webkit-transition: none;
 }
 
 .services{
