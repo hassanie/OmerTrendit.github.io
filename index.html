@@ -84,15 +84,20 @@
             scroll_start = $(this).scrollTop();
             if(scroll_start > offset.top) {
                 $('#navbar').css('background-color', '#4e69ec');
+                $('#navbar').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)');
             } else {
                 $('#navbar').css('background-color', 'transparent');
+                $('#navbar').css('box-shadow', '0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19)');
             }
             $(document).scroll(function() { 
                 scroll_start = $(this).scrollTop();
                 if(scroll_start > offset.top) {
                     $('#navbar').css('background-color', '#4e69ec');
+                    $('#navbar').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)');
+                    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
                 } else {
                     $('#navbar').css('background-color', 'transparent');
+                    $('#navbar').css('box-shadow', '0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19)');
                 }
             });
         });
@@ -149,11 +154,11 @@
             <nav class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <!--<li data-toggle="collapse" data-target="#myNavbar">-->
-                    <li><a href="#overview" class="hideme">OVERVIEW</a></li>
-                    <li><a href="#platform" class="hideme">PLATFORM</a></li>
-                    <li><a href="#token" class="hideme">TOKEN</a></li>
-                    <li><a href="#roadmap" class="hideme">ROADMAP</a></li>
-                    <li><a href="#team" class="hideme">TEAM</a></li>
+                    <li><a href="#overview" class="hideme"><b>OVERVIEW</b></a></li>
+                    <li><a href="#platform" class="hideme"><b>PLATFORM</b></a></li>
+                    <li><a href="#token" class="hideme"><b>TOKEN</b></a></li>
+                    <li><a href="#roadmap" class="hideme"><b>ROADMAP</b></a></li>
+                    <li><a href="#team" class="hideme"><b>TEAM</b></a></li>
                 </ul>
             </div>
         </div>
