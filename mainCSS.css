@@ -78,11 +78,24 @@
   position: relative;
   background-color: #f5eeee;
   background-size: cover;
-  padding-left: 10% !important;
-  padding-right: 10% !important;
+  padding-left: 12% !important;
+  padding-right: 12% !important;
 }
 
 .bg-blue .container {
+  position:relative;
+   z-index:0;
+}
+
+.bg-blue2{
+  position: relative;
+  background-color: #ffffff;
+  background-size: cover;
+  padding-left: 20% !important;
+  padding-right: 20% !important;
+}
+
+.bg-blue2 .container {
   position:relative;
    z-index:0;
 }
@@ -365,9 +378,12 @@ body {
 .table{
   width: 70%;
   margin: auto;
+  background-color: #fff !important; 
 }
 
-
+.th {
+  background: #000;
+}
 
 @media (max-width: 720px) {
   .table{
@@ -483,6 +499,6 @@ body {
     padding: 10px 10px 10px 10px;
   }
 
-.platform .myShadow{
+.myShadow{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
