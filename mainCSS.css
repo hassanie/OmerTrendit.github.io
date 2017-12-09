@@ -308,11 +308,12 @@
   height: 530px;
   border: 1;
   border-radius: 15px;
-  background-color:#ebeff1;
+  background-color:#f0f5f8 !important;
   color: #000;
   text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 .thumbnail img{
     width: 50%;
@@ -511,3 +512,4 @@ body {
 .myShadow{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
