@@ -124,7 +124,7 @@
   margin-bottom: 0px;
   opacity: 0.2;
   color: #fff;
-  background: #000 url("images/background/team.jpeg") center center;
+  background: #000 url("images/background/toronto.jpg") center center;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -485,6 +485,4 @@ body {
 
 .platform .myShadow{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding-bottom: 5px;
-  padding-top: 5px;
 }
