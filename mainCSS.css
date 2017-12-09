@@ -315,7 +315,8 @@
 }
 
 .advisor{
-  background: rgb(245, 241, 204) !important;
+  background: #fcf4d0 !important;
+  background-color: #fcf4d0 !important;
 }
 
 .thumbnail img{
