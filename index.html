@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- ChartJS Library for PieChart -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pie-chart/1.0.0/pie-chart.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Modified CSS -->
@@ -436,14 +434,16 @@
         <h4 align="center" class="hideme">Funds raised from the crowdsale will be distributed as follows.</h4>
         <div class="row">
             <div class="col-md-6 col-sm-12">
-                <img id="piechart" src="images/graphDescription/chart.png" width="85%" class="myShadow img-responsive">
+                <img id="piechart" src="images/graphDescription/chart.png" width="400" class="myShadow hidden-xs hidden-lg hidden-xl">
+                <img id="piechart" src="images/graphDescription/chart.png" width="300" class="myShadow hidden-sm hidden-md hidden-lg hidden-xl">
+                <img id="piechart" src="images/graphDescription/chart.png" width="480" class="myShadow hidden-xs hidden-sm hidden-md">
             </div>
             <div class="col-md-6 col-sm-12">
-                <br>
-                <div class="well myWell2"><b>Long Term Platform Development:</b> 45%<br></div>
-                <div class="well myWell2"><b>Salaries: </b> 30%<br></div>
-                <div class="well myWell2"><b>Marketing: </b> 20%<br></div>
-                <div class="well myWell2"><b>Founders: </b> 5%<br></div>
+                <br class="hidden-xs hidden-sm hidden-md"><br class="hidden-xs hidden-sm">
+                <div class="well myWellGreen"><b>Long Term Platform Development:</b> 45%<br></div>
+                <div class="well myWellRed"><b>Salaries: </b> 30%<br></div>
+                <div class="well myWellYellow"><b>Marketing: </b> 20%<br></div>
+                <div class="well myWellBlue"><b>Team: </b> 5%<br></div>
             </div>
         </div>        
     </div>

@@ -508,10 +508,27 @@ body {
     margin-right: 30%;
   }
 
-  .myWell2{
+  .myWellGreen{
     margin-left:5%;
     margin-right:5%;
+    background-color: #3aaa36!important;
   }
+  .myWellRed{
+    margin-left:5%;
+    margin-right:5%;
+    background-color: #69ec67!important;
+  }
+  .myWellBlue{
+    margin-left:5%;
+    margin-right:5%;
+    background-color: #69ec67!important;
+  }
+  .myWellYellow{
+    margin-left:5%;
+    margin-right:5%;
+    background-color: #69ec67 !important;
+  }
+
 .myShadow{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
