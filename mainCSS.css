@@ -36,7 +36,7 @@
   margin-bottom: 0px;
   opacity: 0.2;
   color: #fff;
-  background: #000 url("https://wildbit.com/blog-images/2016/05/roadmap.png") center center;
+  background: #fff /*url("https://wildbit.com/blog-images/2016/05/roadmap.png") center center;*/
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -48,7 +48,7 @@
 
 .jumbotron {
     position: relative;
-    background-color: #4e69ec; 
+    background-color: #ffffff; 
     color: #ffffff;
     padding: 60px 25px;
 }
