@@ -524,6 +524,7 @@ body {
   .disWell{
     height: 240px;
     box-shadow: none !important;
+    border: none;
   }
 
   .disWell2{
