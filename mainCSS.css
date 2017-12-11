@@ -526,6 +526,14 @@ body {
     box-shadow: none !important;
   }
 
+  .disWell2{
+    width: 100%;
+    box-shadow: none !important;
+    border: none;
+  }
+  .customHr{
+    border-top: 2px solid #b7b8bd !important;
+  }
 
   .myWell{
     margin-left: 30%;
