@@ -78,8 +78,8 @@
   position: relative;
   background-color: #f8f8f8;
   background-size: cover;
-  padding-left: 12% !important;
-  padding-right: 12% !important;
+  padding-left: 20% !important;
+  padding-right: 20% !important;
 }
 
 .bg-blue .container {
@@ -564,4 +564,3 @@ body {
 .myShadow{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-

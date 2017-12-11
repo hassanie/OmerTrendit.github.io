@@ -149,43 +149,6 @@
     <!-- Slide Up Effect -->
     <script>
     </script>
-    <!-- Google Charts Script -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Category', 'Percentage'],
-          ['Reserve',     45],
-          ['Salaries',    30],
-          ['Marketing',   20],
-          ['Team',         5],
-        ]);
-
-        var options = {
-          title: '',
-          backgroundColor: 'transparent',
-          legend: {position: 'none'},
-          is3D: true,
-          width: '512',
-          height: '512'
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-        chart.draw(data, options);
-      }
-    </script>
-    <script>
-    $(window).resize(function(){
-        drawChart();
-    });
-    </script>
-
-
 </head>
 
 <body id="myPage" data-spy="scroll" data-target="#myNavbar" data-offset="60">
@@ -517,12 +480,13 @@
         <h2 class="hideme"><b>Crowdsale</b></h2> 
         <h4 align="center" class="hideme">Funds raised from the crowdsale will be distributed as follows.</h4><br>
         <div class="row">
-            <div class="col-md-3 col-sm-12">
-                <div id="piechart"></div>
+            <div class="col-md-6 col-sm-12">
+                <img id="piechart" src="images/graphDescription/pieChart.png" width="276" class="hidden-xs">
+                <img id="piechart" src="images/graphDescription/pieChart.png" width="220" class="hidden-sm hidden-md hidden-lg hidden-xl">
             </div>
-            <div class="col-md-9 col-sm-12">
-                <br class="hidden-xs hidden-sm hidden-md"><br class="hidden-xs hidden-sm">
-                <div class="well myWellBlue"><b>Long Term Platform Development:</b> 45%<br></div>
+            <div class="col-md-6 col-sm-12">
+                <br class="hidden-xs hidden-sm">
+                <div class="well myWellBlue"><b>Reserve:</b> 45%<br></div>
                 <div class="well myWellRed"><b>Salaries: </b> 30%<br></div>
                 <div class="well myWellYellow"><b>Marketing: </b> 20%<br></div>
                 <div class="well myWellGreen"><b>Team: </b> 5%<br></div>
