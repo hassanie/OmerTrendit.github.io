@@ -248,7 +248,7 @@
 /*Youtube Videos*/
 .videoWrapper {
 	position: relative;
-	padding-bottom: 57.5%; /* 16:9 */
+	padding-bottom: 45%; /* 16:9 */
 	padding-top: 40%;
   height: 100%;
 }
