@@ -514,10 +514,18 @@ body {
   /**/
 
   .well{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     color: #000;
     background-color: #fff;
     margin: 2% 0;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .crowdsale .well{
+    padding: 0px 0px 0px 0px;
+  }
+
+  .crowdsale .innerSale .well{
     padding: 10px 10px 10px 10px;
   }
 
@@ -542,20 +550,25 @@ body {
   }
 
   .myWellGreen{
+    box-shadow: none;
     margin-left:5%;
     margin-right:5%;
-    background-color: #a5f5a1!important;
-    background: #a5f5a1 !important;
+    background-color: #4f994a!important;
+    background: #4f994a !important;
+    color: white;
     border: none;
   }
   .myWellRed{
+    box-shadow: none;
     margin-left:5%;
     margin-right:5%;
-    background-color: #e66d6d!important;
-    background: #e66d6d !important;
+    background-color: #fd2424!important;
+    background: #fd2424 !important;
+    color: white;
     border: none;
   }
   .myWellBlue{
+    box-shadow: none;
     margin-left:5%;
     margin-right:5%;
     background-color: #62a4ee!important;
@@ -563,10 +576,18 @@ body {
     border: none;
   }
   .myWellYellow{
+    box-shadow: none;
     margin-left:5%;
     margin-right:5%;
-    background-color: #f8f8a7 !important;
-    background: #f8f8a7 !important;
+    background-color: #fc8d24 !important;
+    background: #fc8d24 !important;
+    border: none;
+  }
+  .myWellGallery{
+    margin-left:0%;
+    margin-right:0%;
+    background-color: #ebf1f3!important;
+    background: #ebf1f3 !important;
     border: none;
   }
 
