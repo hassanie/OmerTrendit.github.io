@@ -530,7 +530,7 @@ body {
   }
 
   .disWell{
-    height: 240px;
+    height: auto;
     box-shadow: none !important;
     border: none;
   }
