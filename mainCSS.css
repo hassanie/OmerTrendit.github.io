@@ -78,8 +78,8 @@
   position: relative;
   background-color: #f8f8f8;
   background-size: cover;
-  padding-left: 20% !important;
-  padding-right: 20% !important;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
 }
 
 .bg-blue .container {
@@ -522,11 +522,13 @@ body {
   }
 
   .crowdsale .well{
-    padding: 0px 0px 0px 0px;
+    padding: 0 0 0 0;
+
   }
 
   .crowdsale .innerSale .well{
     padding: 10px 10px 10px 10px;
+    
   }
 
   .disWell{
