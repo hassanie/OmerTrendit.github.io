@@ -537,6 +537,7 @@ body {
 
   .disWell{
     height: auto;
+    background-color: #f8f8f8;
     box-shadow: none !important;
     border: none;
   }
