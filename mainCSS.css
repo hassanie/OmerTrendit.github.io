@@ -61,15 +61,15 @@
   color:#000;
 }
 
-.bg-team{
+.bg-platform{
   position: relative;
-  background-color: #f5eeee;
+  background-color: #fff;
   background-size: cover;
   padding-left: 0% !important;
   padding-right: 0% !important;
 }
 
-.bg-team .container {
+.bg-platform .container {
   position:relative;
    z-index:0;
 }
@@ -115,10 +115,10 @@
    z-index:0;
 }
 
-.bg-team .myback{
+.bg-platform .myback{
   margin-bottom: 0px;
   color: #fff;
-  background: #f8f8f8;
+  background: #fff;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -128,7 +128,7 @@
   z-index:0;
 }
 
-.bg-team .hr{
+.bg-platform .hr{
   display: block;
   height: 4px;
   border: 1;
